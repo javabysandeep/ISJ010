@@ -8,6 +8,6 @@ public class Demo12 {
             count++;
         }
         System.out.println("Number iterations " + count);
-        //even numbers : 2, 4, 6, 8, 10, 12,..100 => 50
+        //81
     }
 }

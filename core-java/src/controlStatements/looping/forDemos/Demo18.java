@@ -2,13 +2,13 @@ package controlStatements.looping.forDemos;
 
 public class Demo18 {
     public static void main(String[] args) {
-        //prime
-        //perfect
+        //factors of given number
+        //perfect number
+        //prime number
         //factorial
         //palindrome
         //armstrong
         //prime perfect
-        //factors
         int number = 100;
         for (int i = 1; i <= number / 2; i++) {
             if (number % i == 0) {

@@ -5,5 +5,6 @@ public class Demo8 {
        for (int i = 0; i < 10; i++) {
            System.out.println(i);
        }
+       //0,1,2, ..9
     }
 }
