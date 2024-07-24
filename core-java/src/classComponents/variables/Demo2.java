@@ -1,4 +1,4 @@
-package classCompoenents.variables;
+package classComponents.variables;
 
 public class Demo2 {
     public static void main(String[] args) {

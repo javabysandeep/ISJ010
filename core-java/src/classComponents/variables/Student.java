@@ -1,4 +1,4 @@
-package classCompoenents.variables;
+package classComponents.variables;
 
 public class Student {
     int studentId;
