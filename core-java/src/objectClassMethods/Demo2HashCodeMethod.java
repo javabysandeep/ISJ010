@@ -10,12 +10,14 @@ public class Demo2HashCodeMethod {
                 this.name = name;
             }
         }
+
         Student student1 = new Student(101,"kundan");
         Student student2 = new Student(101,"kundan");
+
         Student student3 = student1;
 
         System.out.println("s1 "+student1.hashCode());//1595428806
-        System.out.println("s2 "+student2.hashCode());//2093176254
         System.out.println("s3 "+student3.hashCode());//1595428806
+        System.out.println("s2 "+student2.hashCode());//2093176254
     }
 }
