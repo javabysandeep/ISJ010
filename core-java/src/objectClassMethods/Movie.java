@@ -3,8 +3,8 @@ package objectClassMethods;
 import lombok.*;
 
 @NoArgsConstructor
-@AllArgsConstructor
 @Data
+@AllArgsConstructor
 @ToString
 @EqualsAndHashCode
 public class Movie {
