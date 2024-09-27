@@ -9,7 +9,8 @@ public class Demo19Throws {
         }
     }
 
-    private static int divide(int number1, int number2) throws ArithmeticException {
+    //unchecked exception are implicitly propagated to caller method. no need of throws
+    private static int divide(int number1, int number2)  {
         int division = number1 / number2;
         return division;
     }
