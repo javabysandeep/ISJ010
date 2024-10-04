@@ -1,4 +1,4 @@
-package fileHandling;
+package fileHandling.fileDemos;
 
 import java.io.File;
 import java.io.FilenameFilter;
@@ -20,8 +20,8 @@ public class Demo9FileNameListingAndFiltering {
         //lambda expression
         FilenameFilter fileNameFilter2 = (dir, name) -> name.length() > 15;
         FilenameFilter fileNameFilter3 = (dir, name) -> name.startsWith("I");
-        FilenameFilter fileNameFilter = (dir, name) -> name.contains("Demo1");
-        String[] fileNamesFromGivenFolder = folder.list(fileNameFilter);
+        FilenameFilter fileNameFilter4 = (dir, name) -> name.contains("Demo1");
+        String[] fileNamesFromGivenFolder = folder.list(fileNameFilter4);
 
         //enhanced for loop
         for (String temp : fileNamesFromGivenFolder) {
