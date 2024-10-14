@@ -2,7 +2,7 @@ package collectionFramework.listImplmentations;
 
 import java.util.ArrayList;
 
-public class Demo2 {
+public class Demo3Remove {
     public static void main(String[] args) {
         ArrayList arrayList = new ArrayList();
         arrayList.add(100);
@@ -13,12 +13,12 @@ public class Demo2 {
         arrayList.add("abc");
         arrayList.add(10.5f);
         arrayList.add(true);
+        System.out.println("Before removal");
         System.out.println(arrayList);
 
-        ArrayList arrayList2 = new ArrayList<>();
-        arrayList2.addAll(arrayList);
-        arrayList2.add("new list");
-        System.out.println(arrayList2);
+        arrayList.remove(true);
+        System.out.println("after removal");
+        System.out.println(arrayList);
 
     }
 }
