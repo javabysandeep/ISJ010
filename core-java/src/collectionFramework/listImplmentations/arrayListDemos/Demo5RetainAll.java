@@ -1,4 +1,4 @@
-package collectionFramework.listImplmentations;
+package collectionFramework.listImplmentations.arrayListDemos;
 
 import java.util.ArrayList;
 
