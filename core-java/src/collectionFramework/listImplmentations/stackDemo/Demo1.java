@@ -19,6 +19,5 @@ public class Demo1 {
         System.out.println(stack.pop());
         System.out.println(stack.pop());
         System.out.println(stack.pop());
-
     }
 }
