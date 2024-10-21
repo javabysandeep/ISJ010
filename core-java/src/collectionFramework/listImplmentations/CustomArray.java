@@ -1,4 +1,4 @@
-package collectionFramework;
+package collectionFramework.listImplmentations;
 
 import java.util.Arrays;
 

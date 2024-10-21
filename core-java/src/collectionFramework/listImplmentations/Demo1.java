@@ -1,6 +1,4 @@
-package collectionFramework;
-
-import java.util.ArrayList;
+package collectionFramework.listImplmentations;
 
 public class Demo1 {
     public static void main(String[] args) {
