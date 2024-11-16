@@ -10,13 +10,18 @@ public class Demo9FetchRecordsPreparedStatement {
         String username = "root";
         String password = "root";
         Connection connection = DriverManager.getConnection(url, username, password);
-        String sql = "select * from student where id=?";
-        PreparedStatement preparedStatement = connection.prepareStatement(sql);
+
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter the id");
         int id = scanner.nextInt();
+
+        String sql = "select * from student where id=?";
+        PreparedStatement preparedStatement = connection.prepareStatement(sql);
+
         preparedStatement.setInt(1, id);
+
         ResultSet resultSet = preparedStatement.executeQuery();// DQL query
+
         while (resultSet.next()) {
            /* System.out.println(resultSet.getInt("id") + "\t" +
                     resultSet.getString("name") + "\t" +
