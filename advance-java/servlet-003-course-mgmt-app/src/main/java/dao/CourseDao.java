@@ -68,7 +68,7 @@ public class CourseDao {
         }
     }
 
-    public void editCourse(Course course){
+    public void editCourse(Course course) {
         Connection connection = ConnectionUtil.getConnection();
 
     }
