@@ -1,5 +1,8 @@
 package com.itshaala;
 
+import com.itshaala.model.A;
+import com.itshaala.model.B;
+import com.itshaala.model.C;
 import com.itshaala.model.Employee;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -11,31 +14,50 @@ import java.util.List;
 /**
  * Hello world!
  */
-public class App {
+public class InheritanceApp {
     public static void main(String[] args) {
-        Employee employee = Employee.builder()
-                .name("Kundan")
-                .salary(7500)
-                .tasks(List.of("Pushpa 2","hibernate revision","chai at fc road"))
-                .build();
-        //display("abc", "abx", "yb");
+
+      /*  C c = new C();
+        c.setX(1);
+        c.setY(2);
+        c.setZ(3);
+
+        c.setP(10);
+        c.setQ(20);
+        c.setR(30);
+
+        c.setM(100);
+        c.setN(200);
+        c.setO(300);*/
+
+     /*   B b = new B();
+        b.setX(1);
+        b.setY(2);
+        b.setZ(3);
+
+        b.setP(10);
+        b.setQ(20);
+        b.setR(30);*/
+
+        A a = new A();
+        a.setX(1);
+        a.setY(2);
+        a.setZ(3);
+
+
+
+
         Configuration configuration = new Configuration();
         configuration.configure("hibernate.cfg.xml");
         SessionFactory sessionFactory = configuration.buildSessionFactory();
         Session session = sessionFactory.openSession();
         Transaction transaction = session.beginTransaction();
-        session.save(employee);
+        session.save(a);
         transaction.commit();
         session.close();
         sessionFactory.close();
-        System.out.println("Employee object saved");
-
-
+        System.out.println("C object saved");
     }
 
-    public static void display(String... str) {
-        for (String s : str) {
-            System.out.println(s);
-        }
-    }
+
 }
