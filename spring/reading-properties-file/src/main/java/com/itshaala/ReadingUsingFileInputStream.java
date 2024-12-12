@@ -7,7 +7,7 @@ import java.io.IOException;
 /**
  * Hello world!
  */
-public class App {
+public class ReadingUsingFileInputStream {
     public static void main(String[] args) throws IOException {
        //read the application.properties file
         File file = new File("C:\\Work\\ISJ010\\spring\\reading-properties-file\\src\\main\\resources\\application.properties");
